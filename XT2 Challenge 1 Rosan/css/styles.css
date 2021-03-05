@@ -1,0 +1,100 @@
+/* basis*/
+body {
+    width: 100%;
+    font-family: 'Arial';
+     background: white;
+}
+
+/*fonts*/
+
+h1, figure{
+    font-size: 2em;
+    border-bottom: 0;
+    text-align: center;
+}
+
+/* mobiel */
+figure{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    padding: 0 5% 5%;
+}
+article{
+    display: flex;
+    background: #F7F8F9;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+figure img{
+        width:200px;
+    }
+
+.taart{
+    min-width: 12.5rem;
+    width: 20rem;
+    height: 25rem;
+    margin: 1.5rem auto;
+
+}
+.grafiek{
+    min-width: 18rem;
+    width: 20rem;
+    height: 25rem;
+    margin: 1.5rem auto;
+
+}
+.balk{
+    min-width: 12.5rem;
+    width: 20rem;
+    height: 25rem;
+    margin: 1.5rem auto;
+}
+
+/*  tablet*/
+@media screen and ( min-width: 620px) {
+    html {
+        height: 100%;
+    }
+
+    article{
+        width: 30%;
+    }
+    main{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .balk{
+        width: 80%;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+   .taart .grafiek{
+       width: 20%;
+       padding-top:150%;
+   }
+   .balk{
+        width: 50%;
+    }
+
+    figure{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    figure img{
+        width:250px;
+    }
+}
