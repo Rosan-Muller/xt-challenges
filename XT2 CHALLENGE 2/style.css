@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 8%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+.wrapper>*{
+	flex: 1 100%;
+}
+
+.main {
+	text-align: center;
+	background: none;
+	font-size: 45px;
+	font-family: 'Cantarell', sans-serif;
+	color: white;
+}
+
+h1 {
+    font-family: 'Cantarell', sans-serif;
+    color: white;
+}
+
+h3 {
+	color: white;
+	font-size:20px;
+}
+
+.aside1 {
+	background-image: url("space.jpg");
+	background-size: 1000px;
+	color: white;
+}
+
+.aside2 {
+	color: white;
+
+}
+
+svg {
+	padding: 2%;
+}
+
+
+@media all and (min-width:600px) {
+	.aside {
+		flex: 1;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.main {
+		flex: 1;
+	}
+
+	.aside1 {
+		order: 1;
+	}
+ 
+	.aside2 { 
+		order: 4;
+	}
+
+	.main {
+		order: 3;
+	}
+	
+}
+
+@media all and (min-width: 1200px) {
+	.main {
+		flex: 1;
+	}
+
+	.aside1 {
+		order: 1;
+	}
+ 
+	.aside2 { 
+		order: 4;
+	}
+
+	.main {
+		order: 2;
+	}
+}
+
+}
